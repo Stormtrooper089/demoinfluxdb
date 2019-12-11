@@ -24,12 +24,12 @@ public class TickDataToTradeTranslator {
 				tradeObject.setScriptName(tickArray[0]);
 				tradeObject.setDate(tickArray[1]);
 				tradeObject.setTime(tickArray[2]);
-				tradeObject.setOpen(tickArray[3]);
-				tradeObject.setHigh(tickArray[4]);
-				tradeObject.setLow(tickArray[5]);
-				tradeObject.setClose(tickArray[6]);
-				tradeObject.setVolume(tickArray[7]);
-				tradeObject.setDeviation(tickArray[8]);
+				tradeObject.setOpen(Double.parseDouble(tickArray[3]));
+				tradeObject.setHigh(Double.parseDouble(tickArray[4]));
+				tradeObject.setLow(Double.parseDouble(tickArray[5]));
+				tradeObject.setClose(Double.parseDouble(tickArray[6]));
+				tradeObject.setVolume(Double.parseDouble(tickArray[7]));
+				tradeObject.setDeviation(Double.parseDouble(tickArray[8]));
 			}
 			tradeObjectDataList.add(tradeObject);
 		}

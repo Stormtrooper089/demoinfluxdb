@@ -1,16 +1,18 @@
 package model;
 
+import java.util.Date;
+
 public class TradeObject {
 	
 	private String scriptName;
 	private String date;
 	private String time;
-	private String open;
-	private String close;
-	private String high;
-	private String low;
-	private String volume;
-	private String deviation;
+	private double open;
+	private double close;
+	private double high;
+	private double low;
+	private double volume;
+	private double deviation;
 	public String getScriptName() {
 		return scriptName;
 	}
@@ -29,40 +31,40 @@ public class TradeObject {
 	public void setTime(String time) {
 		this.time = time;
 	}
-	public String getOpen() {
+	public double getOpen() {
 		return open;
 	}
-	public void setOpen(String open) {
+	public void setOpen(double open) {
 		this.open = open;
 	}
-	public String getClose() {
+	public double getClose() {
 		return close;
 	}
-	public void setClose(String close) {
+	public void setClose(double close) {
 		this.close = close;
 	}
-	public String getHigh() {
+	public double getHigh() {
 		return high;
 	}
-	public void setHigh(String high) {
+	public void setHigh(double high) {
 		this.high = high;
 	}
-	public String getLow() {
+	public double getLow() {
 		return low;
 	}
-	public void setLow(String low) {
+	public void setLow(double low) {
 		this.low = low;
 	}
-	public String getVolume() {
+	public double getVolume() {
 		return volume;
 	}
-	public void setVolume(String volume) {
+	public void setVolume(double volume) {
 		this.volume = volume;
 	}
-	public String getDeviation() {
+	public double getDeviation() {
 		return deviation;
 	}
-	public void setDeviation(String deviation) {
+	public void setDeviation(double deviation) {
 		this.deviation = deviation;
 	}
 	@Override
@@ -71,6 +73,7 @@ public class TradeObject {
 				+ ", close=" + close + ", high=" + high + ", low=" + low + ", volume=" + volume + ", deviation="
 				+ deviation + "]";
 	}
+	
 	
 	
 }
